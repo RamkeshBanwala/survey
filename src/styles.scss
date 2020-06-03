@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+// @import './styles/material-theme.scss';
+
+html, body { height: 100%; }
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+  }
+  .basic-container {
+    padding: 30px;
+  }
+  .version-info {
+    font-size: 8pt;
+    float: right;
+    margin: 8px;
+  }
+  section {
+    display: table;
+    margin: 8px;
+  }
+  
+  .survey-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    width: 120px;
+  }
+  
+  .survey-button-row {
+    display: table-cell;
+  }
+  
+  .survey-button-row button {
+    display: table-cell;
+    margin-right: 8px;
+  }
+  
+  .survey-flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+  }
+  
+  .survey-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  .fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
