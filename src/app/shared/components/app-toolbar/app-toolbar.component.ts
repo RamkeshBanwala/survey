@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemeService } from '../services/theme-service';
+import { ThemeService } from '../../services/styles/theme-service';
 import { Observable } from 'rxjs/internal/Observable';
-import { Option } from '../../models/Option';
-import  *  as  optionsJson  from  '../../../assets/options.json';
-import { StyleManagerService } from 'src/app/shared/services/style-manager.service';
+import { Option } from '../../../models/Option';
+import  *  as  optionsJson  from  'src/assets/options.json';
+import { StyleManagerService } from 'src/app/shared/services/styles/style-manager.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -15,7 +15,7 @@ export class AppToolbarComponent implements OnInit {
   
   options: Array<Option> = optionsJson['default'];
   selectedTheme: Option;
-  private readonly s1tylesBasePath = `../node_modules/@angular/material/prebuilt-themes/`;
+  
   private readonly stylesBasePath = '../assets/styles/prebuilt-themes/';
   
 
