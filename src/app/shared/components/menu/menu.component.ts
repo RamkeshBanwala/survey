@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output, OnInit } from "@angular/core";
 
-import { Option } from '../../models/Option';
-import { ThemeService } from 'src/app/shared/services/theme-service'
+import { Option } from '../../../models/Option';
+import { ThemeService } from 'src/app/shared/services/styles/theme-service'
 
 @Component({
   selector: 'app-menu',

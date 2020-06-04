@@ -15,9 +15,9 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatSelectModule } from '@angular/material/select';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { ThemeService } from '../services/theme-service';
+import { ThemeService } from '../../services/styles/theme-service';
 import { MatMenuModule } from "@angular/material/menu";
-import { StyleManagerService } from 'src/app/shared/services/style-manager.service';
+import { StyleManagerService } from 'src/app/shared/services/styles/style-manager.service';
 
 @NgModule({
   declarations: [],
