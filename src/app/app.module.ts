@@ -1,7 +1,7 @@
 
 
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { NgModule, APP_INITIALIZER, ErrorHandler } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,9 @@ import { AppToolbarComponent } from './shared/components/app-toolbar/app-toolbar
 import { MenuComponent } from './shared/components/menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppPreBootstrapService } from './app-pre-boot.service';
+import { ObjectFormComponent } from './shared/components/object-form/object-form.component';
+import { HomeComponent } from './shared/components/home/home.component';
+import { GlobalErrorHandler } from './shared/services/error-handler/error-handler.service';
 
 export function initApp(prebootStrap: AppPreBootstrapService) {
   return () => {
@@ -29,7 +32,9 @@ export function initApp(prebootStrap: AppPreBootstrapService) {
     AppComponent,
     AppToolbarComponent,
     MenuComponent,
-    AppToolbarComponent
+    AppToolbarComponent,
+    ObjectFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,8 @@ export function initApp(prebootStrap: AppPreBootstrapService) {
       useFactory: initApp,
       multi: true,
       deps: [AppPreBootstrapService],
-    }],
+    },
+    { provide: ErrorHandler, useClass: GlobalErrorHandler }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
