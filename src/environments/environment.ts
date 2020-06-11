@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  PORTAL_BASE_PATH:'http://localhost:4200',
+  REFRESH_TOKEN: 120,
+  AUTHORIZATION_PATH: '/Login',
+  CONFIG_FILES_LOCATION: 'assets/configs/'
 };
 
 /*

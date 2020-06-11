@@ -1,25 +1,26 @@
 <div class="mat-app-background basic-container">
- <app-toolbar></app-toolbar>
+  <app-toolbar [homeTitle]="homeTitle"></app-toolbar>
   <main>
     <mat-card>
-    <mat-divider></mat-divider>
-    <mat-card-header>
-      <!-- <div mat-card-avatar class="example-header-image"></div> -->
-      <mat-card-title>Title</mat-card-title>
-      <mat-card-subtitle>Sub - Title </mat-card-subtitle>
-    </mat-card-header>
-    
-    <mat-card-content>
-     
-      Content will go here
-    </mat-card-content>
+      <mat-divider></mat-divider>
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>{{title}}</mat-card-title>
+        <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+      </mat-card-header>
 
-    <mat-divider></mat-divider>
+      <mat-card-content>
+        <router-outlet>
+
+        </router-outlet>
+      </mat-card-content>
+
+      <mat-divider></mat-divider>
     </mat-card>
   </main>
 </div>
 <span class="version-info">Current build: 9.2.4 </span>
-<span class="version-info">Author:  Ramkesh Banwala </span>
+<span class="version-info">Author: Ramkesh Banwala </span>
 <!-- <div class="survey-label">Raised</div>
 <div class="survey-button-row">
   <button mat-raised-button>Basic</button>

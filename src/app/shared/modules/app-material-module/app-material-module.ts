@@ -18,6 +18,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { ThemeService } from '../../services/styles/theme-service';
 import { MatMenuModule } from "@angular/material/menu";
 import { StyleManagerService } from 'src/app/shared/services/styles/style-manager.service';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [],
@@ -38,7 +40,8 @@ import { StyleManagerService } from 'src/app/shared/services/styles/style-manage
     MatSelectModule,
     MatDividerModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSnackBarModule
   ],exports : [
     CommonModule,
     MatInputModule,
@@ -56,7 +59,8 @@ import { StyleManagerService } from 'src/app/shared/services/styles/style-manage
     MatSelectModule,
     MatDividerModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSnackBarModule
   ],
   providers : [
     ThemeService,

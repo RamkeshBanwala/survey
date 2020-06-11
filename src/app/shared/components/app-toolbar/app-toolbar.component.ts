@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ThemeService } from '../../services/styles/theme-service';
 import { Observable } from 'rxjs/internal/Observable';
 import { Option } from '../../../models/Option';
@@ -17,7 +17,7 @@ export class AppToolbarComponent implements OnInit {
   selectedTheme: Option;
   
   private readonly stylesBasePath = '../assets/styles/prebuilt-themes/';
-  
+  @Input() public homeTitle: string;
 
   constructor(private readonly styleManager: StyleManagerService) {}
 
