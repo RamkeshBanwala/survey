@@ -1,0 +1,32 @@
+export interface IFields {
+    Name: string;
+    Type: string;
+    DisplayName: string;
+    Required?: boolean;
+    MinLength?: number;
+    MaxLength?: number;
+    IsVisible: boolean;
+    ParentCategory?: number;
+    IsMaster?: boolean;
+    selectedCatValIdField?: string;
+    DefaultData?: string;
+    IsHidable?: boolean;
+    Order?: string;
+    IsDateNA?: boolean;
+    DefaultValue?: string;
+    DefaultSelection?: string;
+    FormatDate?: boolean;
+    FormulaDisabled?: boolean;
+    IsCategory?: boolean;
+    IsMultiSelect?: boolean;
+    ModelValue?: string;
+    FieldId?: number;
+    AdditionalData: any;
+    AdditionalData1: any;
+    ProcessValues: boolean;
+    IsValid: boolean;
+    EntityId: number;
+    EntityTypeId: number;
+    BindLinkedObject: boolean;
+    BindToEntity?: boolean;
+}

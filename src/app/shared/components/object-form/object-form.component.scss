@@ -1,0 +1,48 @@
+.form-container{
+    width: 400 px; 
+    margin: 0 px auto; 
+    margin-top: 200 px
+}
+
+.form-field{
+    display: block
+}
+.center-align{
+    display: grid; 
+    justify-content: center;
+    align-items: center; 
+}
+
+/* override mat css */
+
+
+
+.mat-form-field-infix {
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: 311px !important;
+}
+
+::ng-deep .mat-form-field-infix {
+    width: 311px !important;
+}
+
+.subHeader {
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 2px;
+    
+    margin-top: 10px;
+    background-color: #00acc4;
+    color: #ffffff;
+    width: 350px !important;
+  }
+  .example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+  .form-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }

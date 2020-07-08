@@ -19,7 +19,8 @@ import { ThemeService } from '../../services/styles/theme-service';
 import { MatMenuModule } from "@angular/material/menu";
 import { StyleManagerService } from 'src/app/shared/services/styles/style-manager.service';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [],
@@ -41,7 +42,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatDividerModule,
     MatToolbarModule,
     MatMenuModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule,
+    MatGridListModule
   ],exports : [
     CommonModule,
     MatInputModule,
@@ -60,7 +63,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatDividerModule,
     MatToolbarModule,
     MatMenuModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule,
+    MatGridListModule
   ],
   providers : [
     ThemeService,
