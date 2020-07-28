@@ -1,0 +1,100 @@
+{
+	"Sections": [{
+		"Title": "Suvey : App",
+		"Order": 0,
+		"Type": "FORM",
+		"TargetObjectTypeId": 1005,
+		"TabType": "FORM",
+		"Fields": [
+			{
+				"DisplayName": "Name",
+				"Name": "Name",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"SectionHeader":"Personal Info",
+				"Order": "1"
+			},
+			{
+				"DisplayName": "Mobile Number",
+				"Name": "Text001",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"Order": "1"
+			},{
+				"DisplayName": "Do you think our Serpanch was honest",
+				"Name": "Text002",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"SectionHeader":"Questions",
+				"Order": "2"
+			},
+			{
+				"DisplayName": "Water Logging Issue resolved",
+				"DisplayNameHindi": "Water Logging Issue resolved",
+				"Name": "Text003",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"Order": "2"
+			},
+			{
+				"DisplayName": "Water Logging Issue resolved",
+				"DisplayNameHindi": "Water Logging Issue resolved",
+				"Name": "Text003",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"Order": "2"
+			},
+			{
+				"DisplayName": "Water Logging Issue resolved",
+				"DisplayNameHindi": "Water Logging Issue resolved",
+				"Name": "Text003",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"Order": "2"
+			},
+			{
+				"DisplayName": "Water Logging Issue resolved",
+				"DisplayNameHindi": "Water Logging Issue resolved",
+				"Name": "Text003",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"Order": "2"
+			},
+			{
+				"DisplayName": "Water Logging Issue resolved",
+				"DisplayNameHindi": "Water Logging Issue resolved",
+				"Name": "Text003",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"Order": "2"
+			},
+			{
+				"DisplayName": "Water Logging Issue resolved",
+				"DisplayNameHindi": "Water Logging Issue resolved",
+				"Name": "Text003",
+				"Type": "Text",
+				"Required": true,
+				"IsVisible": true,
+				"IsReadOnly": true,
+				"Order": "2"
+			}
+			
+		]
+	}]
+}
